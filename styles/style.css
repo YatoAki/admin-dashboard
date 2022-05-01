@@ -7,7 +7,7 @@ body,html{
 
 body{
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
 }
 
@@ -17,12 +17,19 @@ body{
   grid-row: 1/3;
   display: grid;
   grid-template-rows: 1fr 8fr;
+  color: white;
+}
+
+.dash-icon{
+  filter: invert(100%);
+  padding-right: 5px;
 }
 
 .branding{
   background-color: red;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 0 40px 0 20px;
 }
 
 .branding h1{
@@ -34,6 +41,26 @@ body{
 
 .navigate{
   background-color: blue;
+  display: flex;
+  flex-direction: column;
+  gap:35px;
+  padding: 20px;
+}
+
+.top, .bottom{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.sidebar-link{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidebar-link img{
+  filter: invert(100%);
 }
 
 
