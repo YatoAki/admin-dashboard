@@ -51,5 +51,20 @@ body{
 
 /* CONTENT AREA */
 .content-area{
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 
+.projects{
+  background-color: gray;
+  grid-row: 1/3;
+}
+
+.announce{
+  background-color: black;
+}
+
+.trend{
+  background-color: yellow;
 }
