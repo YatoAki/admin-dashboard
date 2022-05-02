@@ -83,7 +83,7 @@ body{
   display: grid;
   grid-template-columns: 4fr 2fr;
   grid-template-rows: 2fr 3fr;
-  padding-top:2px;
+  padding:5px 0;
 }
 
 .searchbar{
@@ -244,6 +244,7 @@ h4{
 .announce-card h4{
   margin: 0;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .announce-card p{
