@@ -2,6 +2,7 @@ body,html{
   height: 100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  color: #0c4a6e;
 }
 
 
@@ -49,17 +50,18 @@ body{
 .top, .bottom{
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap:15px;
 }
 
 .sidebar-link{
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .sidebar-link img{
   filter: invert(100%);
+  width: 23px;
 }
 
 
@@ -67,6 +69,12 @@ body{
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: all .1s ease-in;
+}
+
+.sidebar-link a:hover{
+  transform: scale(1.04);
+  text-decoration: underline;
 }
 
 /* HEADER */
@@ -107,11 +115,53 @@ body{
 }
 
 .welcome{
-  background-color: yellow;
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  padding-left: 2rem;
+}
+
+.welcome img{
+  width:60px;
+  height: auto;
+}
+
+.welcome div{
+  display: flex;
+  flex-direction: column;
+  gap:3px;
+}
+
+.welcome span:first-child{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.welcome span:last-child{
+  font-weight: bold;
 }
 
 .buttons{
-  background-color: pink;
+  display: flex;
+  align-items: center;
+  gap:30px;
+}
+
+.buttons button{
+  background-color: #3b82f6;
+  color: white;
+  border: transparent;
+  border-radius: 20px;
+  width: 75px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all .1s ease-in;
+}
+
+.buttons button:hover{
+  transform: scale(1.04);
 }
 
 /* CONTENT AREA */
