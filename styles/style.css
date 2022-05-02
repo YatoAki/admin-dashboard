@@ -231,7 +231,7 @@ h4{
   padding-top: 20px;
 }
 
-.announce-card{
+.announce-card, .trending-card{
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -267,5 +267,46 @@ h4{
 }
 
 .trend{
-  background-color: yellow;
+  padding:20px 20px 0 0;
+}
+
+.profile-card{
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+
+.profile-card div{
+  display: flex;
+  flex-direction: column;
+  gap:4px;
+}
+
+.profile-card div span:first-child{
+  color: #0c4a6e;
+  font-weight: bold;
+}
+
+.profile-card div span:last-child{
+  color: #a1a9c4;
+}
+
+.trending-card{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+
+.trending-card img{
+  width: 30px;
+  height: auto;
+}
+
+.trending-card div{
+  transition: all .1s ease-in;
+  cursor: pointer;
+}
+
+.trending-card div:hover{
+  transform: scale(1.02);
 }
